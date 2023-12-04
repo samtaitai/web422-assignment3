@@ -1,0 +1,17 @@
+.main-container {
+  background-color: #111110;
+}
+.side-bar {
+  background-color: #111110;
+  color: #55676f;
+  height: 100vh;
+  margin: 0;
+}
+.a {
+  font-size: 18px;
+  text-align: center;
+}
+.a:link,
+a:visited {
+  color: #55676f;
+}

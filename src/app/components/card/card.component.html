@@ -1,0 +1,39 @@
+<div class="row mb-3">
+  <form class="search-box">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Filter by title"
+      id="search-text"
+      name="searchText"
+      [(ngModel)]="searchText"
+      (ngModelChange)="searchText = $event"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </form>
+</div>
+<div class="row">
+  <ng-container *ngFor="let game of games | filter : searchText">
+    <div
+      class="card mx-3 my-2 px-4 pt-4 d-flex flex-column"
+      style="width: 18rem"
+    >
+      <img [src]="game.thumbnail" class="card-img-top" alt="..." />
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">{{ game.title }}</h5>
+        <p class="card-text flex-grow-1">
+          {{
+            game.short_description.length > 100
+              ? (game.short_description | slice : 0 : 100) + "..."
+              : game.short_description
+          }}
+        </p>
+        <div class="mt-auto">
+          <a [href]="game.freetogame_profile_url" class="btn btn-warning"
+            >Visit Game Page</a
+          >
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

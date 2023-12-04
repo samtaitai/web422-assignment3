@@ -1,0 +1,21 @@
+.card {
+  background-color: #363434;
+  color: white;
+  text-align: center;
+}
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.search-box .btn-search {
+  background-color: #1a8c58;
+  color: white;
+  border-color: #1a8c58;
+}
+
+.search-box input[type="text"] {
+  width: 300px;
+  margin-right: 10px; /* Adjust margin as needed */
+}

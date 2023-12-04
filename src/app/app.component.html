@@ -1,0 +1,22 @@
+<div class="main-container container-fluid">
+  <div class="main-row row">
+    <div class="side-bar col-2 d-flex flex-column align-items-center">
+      <img class="mt-4" src="../assets/images/logo-removebg-preview.png" />
+      <div class="mb-3">
+        <a [routerLink]="''"><strong>Home</strong></a>
+      </div>
+      <div class="my-4">
+        <a [routerLink]="'shooter-game'"><strong>Shooter Games</strong></a>
+      </div>
+      <div class="my-4">
+        <a [routerLink]="'card-game'"><strong>Card Games</strong></a>
+      </div>
+      <div class="my-4">
+        <a [routerLink]="'strategy-game'"><strong>Strategy Games</strong></a>
+      </div>
+    </div>
+    <div class="content-area col-10 align-items-center">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
