@@ -10,7 +10,6 @@ import { GameService } from 'src/app/services/game.service';
 export class HomeComponent {
   games: Game[] = [];
   unfilteredList: Game[] = [];
-  //searchText: string = '';
   searchResult: Game[] = [];
 
   constructor(private gameService: GameService) {
@@ -18,13 +17,4 @@ export class HomeComponent {
       this.games = data;
     });
   }
-  /*
-  performSearch(text: string) {
-    if (!text) {
-      this.searchResult = [];
-    }
-    this.searchResult = this.unfilteredList.filter((game) =>
-      game?.title.toLowerCase().includes(text.toLowerCase())
-    );
-  }*/
 }

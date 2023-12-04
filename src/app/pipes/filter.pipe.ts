@@ -6,8 +6,6 @@ import { Game } from 'src/app/interfaces/game';
 })
 export class FilterPipe implements PipeTransform {
   transform(games: Game[], searchText: string): Game[] {
-    console.log('Games:', games);
-    console.log('SearchText:', searchText);
     if (!games || !searchText) {
       return games;
     }

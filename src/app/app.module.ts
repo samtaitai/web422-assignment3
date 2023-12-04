@@ -7,7 +7,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CardComponent } from './components/card/card.component';
-import { SearchComponent } from './components/search/search.component';
 import { CardGameComponent } from './components/card-game/card-game.component';
 import { ShooterGameComponent } from './components/shooter-game/shooter-game.component';
 import { StrategyGameComponent } from './components/strategy-game/strategy-game.component';
@@ -18,7 +17,6 @@ import { FilterPipe } from './pipes/filter.pipe';
     AppComponent,
     HomeComponent,
     CardComponent,
-    SearchComponent,
     CardGameComponent,
     ShooterGameComponent,
     StrategyGameComponent,

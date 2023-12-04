@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Game } from 'src/app/interfaces/game';
 import { GameService } from 'src/app/services/game.service';
 
@@ -14,13 +14,5 @@ export class CardGameComponent {
       this.games = data;
       this.games = this.games.filter((game) => game.genre == 'Card');
     });
-  }
-  performSearch(text: string) {
-    if (!text) {
-      return;
-    }
-    this.games = this.games.filter((game) =>
-      game?.title.toLowerCase().includes(text.toLowerCase())
-    );
   }
 }
